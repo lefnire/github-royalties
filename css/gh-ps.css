@@ -1,0 +1,10 @@
+img.polaroid {
+  background: #fff;
+  border: 1px solid #ccc;
+  padding: 5px;
+  max-width: 888px;
+}
+
+.footer {
+  padding-bottom: 50px;
+}
