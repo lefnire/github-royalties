@@ -37,14 +37,14 @@
 			<div class="navbar-inner">
 				<div class="container-fluid">
 					<a class="btn btn-navbar" data-toggle="collapse" data-target=".nav-collapse"> <span class="icon-bar"> </span> <span class="icon-bar"> </span> <span class="icon-bar"> </span> </a>
-					<a class="brand" href="#"> GitHub Profit Sharing </a>
+					<a class="brand" href="#"> GitHub Royalties </a>
 					<div class="nav-collapse">
 						<ul class="nav">
 							<li>
 								<a href="index.html"> Dashboard </a>
 							</li>
 							<li>
-								<a href="manage-contributions.html"> Manage Contributions </a>
+								<a href="contributions.html"> Contributions </a>
 							</li>
 						</ul>
 					</div>
@@ -53,6 +53,7 @@
 							Login With GitHub
 							<br>
 						</button>
+						<div class='btn'><i class='icon-cog'></i></div>
 					</form>
 				</div>
 			</div>
@@ -73,7 +74,7 @@
 								<a href="#approve-hours"> Approve Hours </a>
 							</li>
 							<li class="">
-								<a href="#estimate-values"> Estimate Contribution Worths </a>
+								<a href="#estimate-values"> Rate Contribution Difficulties </a>
 							</li>
 						</ul>
 					</div>
@@ -92,7 +93,14 @@
 						  <div class="control-group">
 						    <label class="control-label" for="inputTask">Task</label>
 						    <div class="controls">
-						      <input type="text" id="inputTask" placeholder="Writing a Kickstarter Campaign">
+						      	<select id='inputTask'>
+								  <option>Writing KickStarter Campaign</option>
+								  <option>VC Fundraising</option>
+								  <option>Meeting</option>
+								  <option>Setting Up Domain</option>
+								  <option>Etc etc</option>
+								  <option><i class='icon-plus-sign'></i>Add Another...</option>
+								</select>
 						    </div>
 						  </div>
 						  <div class="control-group">
@@ -108,15 +116,14 @@
 						<h3> Approve Hours </h3>
 						<div class="row-fluid">
 							<div class="span4">
-								<i class="icon-user"> </i>
-								<span class="badge">joe-business</span>
-								<span class="label label-warning">43 hours: VC fundraising </span>
+								<i class="icon-user"> </i> joe-business
+								<span class="label label-warning"><i class='icon-time icon-white'></i> (22h) VC fundraising </span>
 							</div>
 							<div class="span6">
 								<form class='form-inline'>
 								  <div class="control-group">
 								    <label class="control-label" for="inputAcceptHours">Accept Hours</label>
-								    <input type="text" id="inputAcceptHours" value="43" />
+								    <input type="text" id="inputAcceptHours" value="22" />
 							      	<button type="submit" class="btn">Submit</button>
 								  </div>
 								</form>
@@ -126,18 +133,20 @@
 					
 					<hr>
 					<section id="estimate-values">
-						<h3>Vote on Task Difficulty</h3>
+						<h3>Rate Contribution Difficulties</h3>
 						<div>This determines how much each contribution counts as percentage payout.</div>
 						<h4>File types</h4>
 						<ul>
 							<li><span class='label label-info'>*.c</span> <i class='icon-star'></i><i class='icon-star'></i><i class='icon-star'></i><i class='icon-star'></i><i class='icon-star-empty'></i> <span class='badge badge-success'>3 votes</span></li>
 							<li><span class='label label-info'>*.md</span> <i class='icon-star'></i><i class='icon-star'></i><i class='icon-star-empty'></i><i class='icon-star-empty'></i><i class='icon-star-empty'></i> <span class='badge badge-success'>2 votes</span></li>
 							<li><span class='label label-info'>*.rb</span> <i class='icon-star'></i><i class='icon-star'></i><i class='icon-star'></i><i class='icon-star-empty'></i><i class='icon-star-empty'></i> <span class='badge badge-success'>2 votes</span></li>
+							<li><span class='label label-info'>*.wav</span> <i class='icon-star'></i><i class='icon-star'></i><i class='icon-star'></i><i class='icon-star'></i><i class='icon-star'></i> <span class='badge badge-success'>2 votes</span></li>
 						</ul>
 						<h4>Tasks</h4>
 						<ul>
 							<li><span class='label label-info'>Writing Kickstarter Campaign</span> <i class='icon-star'></i><i class='icon-star'></i><i class='icon-star-empty'></i><i class='icon-star-empty'></i><i class='icon-star-empty'></i> <span class='badge badge-success'>3 votes, 4 submissions</span></li>
 							<li><span class='label label-info'>VC Fundraising</span> <i class='icon-star'></i><i class='icon-star'></i><i class='icon-star-empty'></i><i class='icon-star-empty'></i><i class='icon-star-empty'></i> <span class='badge badge-success'>2 votes, 2 submissions</span></li>
+							<li><span class='label label-info'>Issue Discussions</span> <i class='icon-star'></i><i class='icon-star-empty'></i><i class='icon-star-empty'></i><i class='icon-star-empty'></i><i class='icon-star-empty'></i> <span class='badge badge-success'>2 votes, 2 submissions</span></li>
 						</ul>
 					</section>
 				
