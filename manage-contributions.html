@@ -1,0 +1,156 @@
+<!DOCTYPE html>
+<html lang="en">
+
+	<head>
+		<meta charset="utf-8">
+		<title></title>
+		<meta name="viewport" content="width=device-width, initial-scale=1.0">
+		<meta name="description" content="">
+		<meta name="author" content="">
+		<!-- Le styles -->
+		<link href="css/bootstrap.css" rel="stylesheet">
+		<link href="css/gh-ps.css" rel="stylesheet">
+		<style>
+			body {
+				padding-top: 60px; /* 60px to make the container go all the way
+				 to the bottom of the topbar */
+			}
+		</style>
+		<link href="css/bootstrap-responsive.css" rel="stylesheet">
+		<!-- Le HTML5 shim, for IE6-8 support of HTML5 elements -->
+		<!--[if lt IE 9]>
+		<script src="http://html5shim.googlecode.com/svn/trunk/html5.js">
+		</script>
+		<![endif]-->
+		<!-- Le fav and touch icons -->
+		<link rel="shortcut icon" href="ico/favicon.ico">
+		<link rel="apple-touch-icon-precomposed" sizes="144x144" href="ico/apple-touch-icon-144-precomposed.png">
+		<link rel="apple-touch-icon-precomposed" sizes="114x114" href="ico/apple-touch-icon-114-precomposed.png">
+		<link rel="apple-touch-icon-precomposed" sizes="72x72" href="ico/apple-touch-icon-72-precomposed.png">
+		<link rel="apple-touch-icon-precomposed" href="ico/apple-touch-icon-57-precomposed.png">
+		<style>
+		</style>
+	</head>
+
+	<body>
+		<div class="navbar navbar-fixed-top navbar-inverse">
+			<div class="navbar-inner">
+				<div class="container-fluid">
+					<a class="btn btn-navbar" data-toggle="collapse" data-target=".nav-collapse"> <span class="icon-bar"> </span> <span class="icon-bar"> </span> <span class="icon-bar"> </span> </a>
+					<a class="brand" href="#"> GitHub Profit Sharing </a>
+					<div class="nav-collapse">
+						<ul class="nav">
+							<li>
+								<a href="index.html"> Dashboard </a>
+							</li>
+							<li>
+								<a href="manage-contributions.html"> Manage Contributions </a>
+							</li>
+						</ul>
+					</div>
+					<form class="navbar-form pull-right">
+						<button class="btn">
+							Login With GitHub
+							<br>
+						</button>
+					</form>
+				</div>
+			</div>
+		</div>
+		<div class="container-fluid">
+			<div class="row-fluid">
+				<div class="span3">
+					<div class="well sidebar-nav">
+						<ul class="nav nav-list">
+							<!--<li class="nav-header">
+								Header
+							</li>-->
+							<li></li>
+							<li class="">
+								<a href="#submit-hours"> Submit Hours </a>
+							</li>
+							<li class="">
+								<a href="#approve-hours"> Approve Hours </a>
+							</li>
+							<li class="">
+								<a href="#estimate-values"> Estimate Contribution Worths </a>
+							</li>
+						</ul>
+					</div>
+				</div>
+				<div class="span9">
+					
+					<section id="submit-hours">
+						<h3> Submit Hours </h3>
+						<form>
+						  <div class="control-group">
+						    <label class="control-label" for="inputHours">Hours</label>
+						    <div class="controls">
+						      <input type="text" id="inputHours" placeholder="Hours">
+						    </div>
+						  </div>
+						  <div class="control-group">
+						    <label class="control-label" for="inputTask">Task</label>
+						    <div class="controls">
+						      <input type="text" id="inputTask" placeholder="Writing a Kickstarter Campaign">
+						    </div>
+						  </div>
+						  <div class="control-group">
+						    <div class="controls">
+						      <button type="submit" class="btn">Submit</button>
+						    </div>
+						  </div>
+						</form>
+					</section>
+	
+					<hr>
+					<section id="approve-hours">
+						<h3> Approve Hours </h3>
+						<div class="row-fluid">
+							<div class="span4">
+								<i class="icon-user"> </i>
+								<span class="badge">joe-business</span>
+								<span class="label label-warning">43 hours: VC fundraising </span>
+							</div>
+							<div class="span6">
+								<form class='form-inline'>
+								  <div class="control-group">
+								    <label class="control-label" for="inputAcceptHours">Accept Hours</label>
+								    <input type="text" id="inputAcceptHours" value="43" />
+							      	<button type="submit" class="btn">Submit</button>
+								  </div>
+								</form>
+							</div>
+						</div>
+					</section>
+					
+					<hr>
+					<section id="estimate-values">
+						<h3>Vote on Task Difficulty</h3>
+						<div>This determines how much each contribution counts as percentage payout.</div>
+						<h4>File types</h4>
+						<ul>
+							<li><span class='label label-info'>*.c</span> <i class='icon-star'></i><i class='icon-star'></i><i class='icon-star'></i><i class='icon-star'></i><i class='icon-star-empty'></i> <span class='badge badge-success'>3 votes</span></li>
+							<li><span class='label label-info'>*.md</span> <i class='icon-star'></i><i class='icon-star'></i><i class='icon-star-empty'></i><i class='icon-star-empty'></i><i class='icon-star-empty'></i> <span class='badge badge-success'>2 votes</span></li>
+							<li><span class='label label-info'>*.rb</span> <i class='icon-star'></i><i class='icon-star'></i><i class='icon-star'></i><i class='icon-star-empty'></i><i class='icon-star-empty'></i> <span class='badge badge-success'>2 votes</span></li>
+						</ul>
+						<h4>Tasks</h4>
+						<ul>
+							<li><span class='label label-info'>Writing Kickstarter Campaign</span> <i class='icon-star'></i><i class='icon-star'></i><i class='icon-star-empty'></i><i class='icon-star-empty'></i><i class='icon-star-empty'></i> <span class='badge badge-success'>3 votes, 4 submissions</span></li>
+							<li><span class='label label-info'>VC Fundraising</span> <i class='icon-star'></i><i class='icon-star'></i><i class='icon-star-empty'></i><i class='icon-star-empty'></i><i class='icon-star-empty'></i> <span class='badge badge-success'>2 votes, 2 submissions</span></li>
+						</ul>
+					</section>
+				
+					<hr>
+					<footer class='footer'>
+						© Company 2012 | <a href="#">About</a> | <a href="#">Contact</a>
+						
+					</footer>
+				</div>
+			</div>
+		</div>
+		<script src="https://ajax.googleapis.com/ajax/libs/jquery/1.7.2/jquery.min.js"></script>
+		<script src="js/bootstrap.js"></script>
+	</body>
+
+</html>
