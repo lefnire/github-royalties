@@ -148,6 +148,18 @@
 							<li><span class='label label-info'>VC Fundraising</span> <i class='icon-star'></i><i class='icon-star'></i><i class='icon-star-empty'></i><i class='icon-star-empty'></i><i class='icon-star-empty'></i> <span class='badge badge-success'>2 votes, 2 submissions</span></li>
 							<li><span class='label label-info'>Issue Discussions</span> <i class='icon-star'></i><i class='icon-star-empty'></i><i class='icon-star-empty'></i><i class='icon-star-empty'></i><i class='icon-star-empty'></i> <span class='badge badge-success'>2 votes, 2 submissions</span></li>
 						</ul>
+						<h4>Exclusions</h4>
+						Exceptions for commits that don't count as much. Eg, you wouldn't want someone to get 50% for adding jQuery UI.
+						<form>
+						  <div class="control-group">
+							<textarea rows=4>vendor/*
+node_modules/*
+sites/all/modules/contrib/*
+sites/all/themes/*
+                 			</textarea>
+					      	<button type="submit" class="btn">Submit</button>
+						  </div>
+						</form>
 					</section>
 				
 					<hr>
